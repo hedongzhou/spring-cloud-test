@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        prefix: nacos-config
+        server-addr: 127.0.0.1:8848
+        file-extension: properties
+        namespace: 6f17a8cd-69ba-4f6a-a3b9-a0ca4807512f
+        group: test

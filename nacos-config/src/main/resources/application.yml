@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: nacos-config
+  profiles:
+    active: dev
+
+server:
+  port: 10010

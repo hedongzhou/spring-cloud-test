@@ -1,0 +1,6 @@
+2019-10-12 16:22:28,985 INFO [dump-all-ok] example.properties+DEFAULT_GROUP, 1570863975921, length=19, md5=b54f63e58da12198344316a61a93add0
+
+2019-10-12 16:33:32,101 WARN [dump-ignore] ignore to save cache file. groupKey=nacos-discovery-dev.properties+DEFAULT_GROUP, md5=25a822367cd73c79acc56da3c73fa07e, lastModifiedOld=1570869084996, lastModifiedNew=1570869211725
+
+2019-10-12 19:01:06,166 WARN [dump-ignore] ignore to save cache file. groupKey=nacos-config-dev.properties+DEFAULT_GROUP, md5=25a822367cd73c79acc56da3c73fa07e, lastModifiedOld=1570876331609, lastModifiedNew=1570878065977
+

@@ -1,0 +1,11 @@
+2019-10-14 14:02:15,314|192.168.20.33|nacos-config-dev.properties|test|6f17a8cd-69ba-4f6a-a3b9-a0ca4807512f|null|1571032934819|192.168.20.33|persist|pub|-1|a9f0cfd7826f9d9a452db3cef26a3d6a
+2019-10-14 14:02:15,333|192.168.20.33|nacos-config-dev.properties|test|6f17a8cd-69ba-4f6a-a3b9-a0ca4807512f|null|1571032934819|192.168.20.33|notify|ok|509|192.168.20.33:8848
+2019-10-14 14:02:15,411|192.168.20.33|nacos-config-dev.properties|test|6f17a8cd-69ba-4f6a-a3b9-a0ca4807512f|null|1571032934819|192.168.20.33|dump|ok|592|28
+2019-10-14 14:02:35,063|192.168.20.33|nacos-config.properties|test|6f17a8cd-69ba-4f6a-a3b9-a0ca4807512f|unknown|-1|pull|not-found|-1|127.0.0.1
+2019-10-14 14:02:35,116|192.168.20.33|nacos-config-dev.properties|test|6f17a8cd-69ba-4f6a-a3b9-a0ca4807512f|unknown|1571032934819|pull|ok|20297|127.0.0.1
+2019-10-14 14:03:18,808|192.168.20.33|nacos-config-dev.properties|test|6f17a8cd-69ba-4f6a-a3b9-a0ca4807512f|null|1571032998752|192.168.20.33|persist|pub|-1|05643e0dcd7a86c91f6b6f8fe9066e21
+2019-10-14 14:03:18,850|192.168.20.33|nacos-config-dev.properties|test|6f17a8cd-69ba-4f6a-a3b9-a0ca4807512f|null|1571032998752|192.168.20.33|notify|ok|97|192.168.20.33:8848
+2019-10-14 14:03:18,924|192.168.20.33|nacos-config-dev.properties|test|6f17a8cd-69ba-4f6a-a3b9-a0ca4807512f|null|1571032998752|192.168.20.33|dump|ok|172|27
+2019-10-14 14:03:18,957|192.168.20.33|nacos-config-dev.properties|test|6f17a8cd-69ba-4f6a-a3b9-a0ca4807512f|unknown|1571032998752|pull|ok|205|127.0.0.1
+2019-10-14 14:03:19,478|192.168.20.33|nacos-config.properties|test|6f17a8cd-69ba-4f6a-a3b9-a0ca4807512f|unknown|-1|pull|not-found|-1|127.0.0.1
+2019-10-14 14:03:19,486|192.168.20.33|nacos-config-dev.properties|test|6f17a8cd-69ba-4f6a-a3b9-a0ca4807512f|unknown|1571032998752|pull|ok|734|127.0.0.1

@@ -1,0 +1,26 @@
+2019-10-16 01:19:59,209 ERROR [master-db] master db not found.
+
+2019-10-16 01:20:06,244 ERROR [db-error] master db 11.162.196.161 down.
+
+2019-10-16 01:20:13,263 ERROR [db-error] slave db 11.163.152.91 down.
+
+2019-10-16 01:20:14,414 WARN useAddressServer:true
+
+2019-10-16 01:20:15,756 ERROR ########## cannot get serverlist, so exit.
+
+2019-10-16 01:21:22,817 ERROR [master-db] master db not found.
+
+2019-10-16 01:21:29,860 ERROR [db-error] master db 11.162.196.161 down.
+
+2019-10-16 01:21:36,868 ERROR [db-error] slave db 11.163.152.91 down.
+
+2019-10-16 01:21:37,811 WARN useAddressServer:true
+
+2019-10-16 01:26:45,789 WARN useAddressServer:true
+
+2019-10-16 01:26:46,011 WARN isQuickStart:false
+
+2019-10-16 15:00:15,832 WARN useAddressServer:true
+
+2019-10-16 15:00:16,001 WARN isQuickStart:false
+

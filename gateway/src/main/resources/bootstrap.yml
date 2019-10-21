@@ -1,0 +1,33 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        prefix: gateway
+        server-addr: 127.0.0.1:8848
+        file-extension: properties
+        namespace: 6f17a8cd-69ba-4f6a-a3b9-a0ca4807512f
+        group: test
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:10080
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: nacos-config
+          uri: lb://nacos-config
+          predicates:
+            - Path=/config/**
+          filters:
+            - StripPrefix= 1
+        - id: nacos-discovery
+          uri: lb://nacos-discovery
+          predicates:
+            - Path=/service/**
+          filters:
+            - StripPrefix= 1
