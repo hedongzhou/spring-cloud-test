@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  */
 @Data
 @Component
-@ConfigurationProperties(prefix = "zuul.ribbon.canary-release")
+@ConfigurationProperties(prefix = "zuul.canary-release")
 public class CanaryReleaseProperties {
 
     /**

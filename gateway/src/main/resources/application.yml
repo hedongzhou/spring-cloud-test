@@ -13,7 +13,6 @@ zuul:
       path: /config/**
       service-id: nacos-config
       strip-prefix: true
-  ribbon:
-    canary-release:
-      enabled: true
-#      check-type: name
+  canary-release:
+    enabled: true
+#    check-type: name

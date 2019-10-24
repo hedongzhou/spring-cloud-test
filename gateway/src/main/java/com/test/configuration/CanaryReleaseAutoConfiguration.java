@@ -19,7 +19,7 @@ import org.springframework.context.annotation.Scope;
  */
 @Configuration
 @AutoConfigureBefore(RibbonClientConfiguration.class)
-@ConditionalOnProperty(value = "zuul.ribbon.canary-release.enabled")
+@ConditionalOnProperty(value = "zuul.canary-release.enabled")
 public class CanaryReleaseAutoConfiguration {
 
     @Autowired
