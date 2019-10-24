@@ -6,3 +6,14 @@ spring:
 
 server:
   port: 10020
+
+zuul:
+  routes:
+    nacos-config:
+      path: /config/**
+      service-id: nacos-config
+      strip-prefix: true
+  ribbon:
+    canary-release:
+      enabled: true
+#      check-type: name

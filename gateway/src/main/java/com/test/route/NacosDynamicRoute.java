@@ -1,16 +1,10 @@
 package com.test.route;
 
-import com.test.config.NacosProperties;
+import com.alibaba.nacos.api.annotation.NacosProperties;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.gateway.event.RefreshRoutesEvent;
-import org.springframework.cloud.gateway.route.RouteDefinition;
-import org.springframework.cloud.gateway.route.RouteDefinitionWriter;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
-import org.springframework.stereotype.Component;
-import reactor.core.publisher.Mono;
 
-import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,7 +14,7 @@ import java.util.List;
  * @author hedongzhou
  * @since 2019/10/16
  */
-@Component
+//@Component
 public class NacosDynamicRoute implements ApplicationEventPublisherAware {
 
     private static final List<String> ROUTE_LIST = new ArrayList<>();
@@ -28,12 +22,12 @@ public class NacosDynamicRoute implements ApplicationEventPublisherAware {
     @Autowired
     private NacosProperties nacosProperties;
 
-    @Autowired
-    private RouteDefinitionWriter routeDefinitionWriter;
+//    @Autowired
+//    private RouteDefinitionWriter routeDefinitionWriter;
 
     private ApplicationEventPublisher applicationEventPublisher;
 
-    @PostConstruct
+//    @PostConstruct
     public void dynamicRouteByNacosListener() {
 //        try {
 //            ConfigService configService = NacosFactory.createConfigService(nacosProperties.getServerAddr());
@@ -63,25 +57,25 @@ public class NacosDynamicRoute implements ApplicationEventPublisherAware {
 //        }
     }
 
-    private void clearRoute() {
-        for (String id : ROUTE_LIST) {
-            this.routeDefinitionWriter.delete(Mono.just(id)).subscribe();
-        }
-        ROUTE_LIST.clear();
-    }
+//    private void clearRoute() {
+//        for (String id : ROUTE_LIST) {
+//            this.routeDefinitionWriter.delete(Mono.just(id)).subscribe();
+//        }
+//        ROUTE_LIST.clear();
+//    }
+//
+//    private void addRoute(RouteDefinition definition) {
+//        try {
+//            routeDefinitionWriter.save(Mono.just(definition)).subscribe();
+//            ROUTE_LIST.add(definition.getId());
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 
-    private void addRoute(RouteDefinition definition) {
-        try {
-            routeDefinitionWriter.save(Mono.just(definition)).subscribe();
-            ROUTE_LIST.add(definition.getId());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    private void publish() {
-        this.applicationEventPublisher.publishEvent(new RefreshRoutesEvent(this.routeDefinitionWriter));
-    }
+//    private void publish() {
+//        this.applicationEventPublisher.publishEvent(new RefreshRoutesEvent(this.routeDefinitionWriter));
+//    }
 
     @Override
     public void setApplicationEventPublisher(ApplicationEventPublisher applicationEventPublisher) {
