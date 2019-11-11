@@ -1,2 +1,0 @@
-2019-10-18 15:55:11,444|192.168.20.33|nacos-config.properties|test|6f17a8cd-69ba-4f6a-a3b9-a0ca4807512f|unknown|-1|pull|not-found|-1|127.0.0.1
-2019-10-18 15:55:11,608|192.168.20.33|nacos-config-dev.properties|test|6f17a8cd-69ba-4f6a-a3b9-a0ca4807512f|unknown|1571032998752|pull|ok|352312856|127.0.0.1
